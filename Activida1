@@ -1,0 +1,17 @@
+import Foundation
+
+func numEnt (numero: Int) -> String {
+    if numero % 2 == 0 {
+        return "El número es par."
+    } else {
+        return "El número es impar."
+    }
+}
+
+print("Ingrese un número:")
+if let input = readLine(), let numero = Int(input) {
+    let resultado = numEnt(numero: numero)
+    print(resultado)
+} else {
+    print("Entrada inválida. Asegúrese de ingresar un número entero válido.")
+}
